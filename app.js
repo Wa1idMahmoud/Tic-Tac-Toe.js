@@ -80,3 +80,14 @@ function checkScore() {
         
     })
 }
+
+/* This will create a button to refresh or reset the game */
+const resetButton = document.createElement('button');
+resetButton.textContent = "Reset Game";
+resetButton.addEventListener("click", resetGame);
+document.body.appendChild(resetButton);
+
+/* This function will reset the game by reloading the page */
+function resetGame() {
+    location.reload();
+}
